@@ -3,11 +3,11 @@
 <title>Static Call Graph - [.\Objects\STM32F407.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\STM32F407.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060061: Last Updated: Sun Jun 13 16:30:21 2021
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060061: Last Updated: Sun Jun 13 17:14:22 2021
 <BR><P>
-<H3>Maximum Stack Usage =         20 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =         28 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
-SystemInit &rArr; SetSysClock
+main &rArr; SystemInit &rArr; SetSysClock
 <P>
 <H3>
 Mutually Recursive functions
@@ -443,8 +443,8 @@ Global Symbols
 
 <P><STRONG><a name="[6c]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
 
-<P><STRONG><a name="[5c]"></a>main</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, main.o(i.main))
-<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = main &rArr; SystemInit &rArr; SetSysClock
+<P><STRONG><a name="[5c]"></a>main</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, main.o(i.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = main &rArr; SystemInit &rArr; SetSysClock
 </UL>
 <BR>[Calls]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
 </UL>

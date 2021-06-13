@@ -562,6 +562,7 @@ void SystemCoreClockUpdate(void)
   */
 static void SetSysClock(void)
 {
+
 #if defined (STM32F40_41xxx) || defined (STM32F427_437xx) || defined (STM32F429_439xx) || defined (STM32F401xx)
 /******************************************************************************/
 /*            PLL (clocked by HSE) used as System clock source                */
@@ -767,7 +768,8 @@ static void SetSysClock(void)
   {
   }
 #endif /* USE_HSE_BYPASS */  
-#endif /* STM32F40_41xxx || STM32F427_437xx || STM32F429_439xx || STM32F401xx */  
+#endif /* STM32F40_41xxx || STM32F427_437xx || STM32F429_439xx || STM32F401xx */ 
+
 }
 
 /**

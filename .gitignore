@@ -9,3 +9,12 @@ Objects/STM32F407.htm
 *._2i
 *.iex
 *.axf
+*.sisc
+SI/STM32F407.si4project/Backup/main(5337).c
+SI/STM32F407.si4project/Backup/main(7739).c
+Objects/STM32F407.axf
+Objects/STM32F407.build_log.htm
+Objects/STM32F407.build_log.htm
+*.axf
+*.htm
+Objects/STM32F407_source.dep
