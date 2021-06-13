@@ -2,7 +2,14 @@
     "configurations": [
         {
             "name": "Target 1",
-            "includePath": [],
+            "includePath": [
+                "h:\\STM32F407\\source\\core",
+                "h:\\STM32F407\\source\\drv\\inc",
+                "h:\\STM32F407\\source\\sys",
+                "h:\\STM32F407\\source",
+                "h:\\STM32F407\\source\\drv",
+                "E:\\Keil_v5\\ARM\\ARMCC\\include"
+            ],
             "defines": [
                 "__CC_ARM",
                 "__arm__",
