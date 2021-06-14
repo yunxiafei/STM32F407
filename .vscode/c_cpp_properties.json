@@ -3,11 +3,13 @@
         {
             "name": "Target 1",
             "includePath": [
-                "h:\\STM32F407\\source\\core",
-                "h:\\STM32F407\\source\\drv\\inc",
-                "h:\\STM32F407\\source\\sys",
-                "h:\\STM32F407\\source",
-                "h:\\STM32F407\\source\\drv",
+                "${workspaceFolder}/**",
+                "~\\source\\drv",
+                "~\\source\\drv\\inc",
+                "~\\source\\hwa",
+                "~\\source\\app",
+                "~\\source\\rtos\\core\\inc",
+                "~\\source\\rtos\\portable\\inc",
                 "E:\\Keil_v5\\ARM\\ARMCC\\include"
             ],
             "defines": [

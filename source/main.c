@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2021-06-13 15:04:38
+ * @LastEditTime: 2021-06-14 13:10:44
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \STM32F407\source\main.c
+ */
 /******************************************************************************
  * (C) Copyright 2021 ÔÆ·É¹¤×÷ÊÒ
  * FILE NAME:    main.c
@@ -16,6 +24,8 @@
 ** #include 
 *****************************************************************************/
 #include "stm32f4xx.h"
+#include "FreeRTOS.h"
+#include "task.h"
 
 /*****************************************************************************
 ** #define
@@ -30,7 +40,7 @@
 /*****************************************************************************
 ** global variable
 *****************************************************************************/
-
+void vTask1( void *pvParameters );
 
 /*****************************************************************************
 ** static variables
@@ -55,6 +65,14 @@ int main(void)
 
     SystemInit();
 
+    xTaskCreate(    vTask1,
+                    "Task1",
+                    128,
+                    NULL,
+                    1,
+                    NULL);
+
+    vTaskStartScheduler();
     while (1)
     {
         return (0);
@@ -63,6 +81,14 @@ int main(void)
 }
 
 
+void vTask1( void *pvParameters )
+{
+    for (;;)
+    {
+        vTaskDelay(10);
+    }
+    
+}
 /****************************************************************************/
 
 
